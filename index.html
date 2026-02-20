@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Camping Gear</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f2f2f2;
+}
+
+/* NAVBAR */
+.navbar{
+background:#333;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-size:15px;
+}
+
+/* HERO */
+.hero{
+height:90vh;
+background:url("https://koa.com/blog/images/family-camping-at-sunset.jpg?preset=heroimagecropped") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+background:#ff9800;
+color:white;
+cursor:pointer;
+margin-top:15px;
+}
+
+/* SECTIONS */
+.section{
+padding:80px;
+background:white;
+margin-bottom:10px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+}
+
+.section-title h2{
+font-size:28px;
+}
+
+.section-title p{
+font-size:14px;
+color:#555;
+}
+
+/* SERVICES */
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.card{
+background:#f8f8f8;
+padding:30px;
+border-radius:8px;
+text-align:center;
+}
+
+.card img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+}
+
+/* ABOUT */
+.about-content{
+max-width:900px;
+margin:auto;
+line-height:1.7;
+}
+
+.about-content h3{
+margin-top:20px;
+}
+
+/* CONTACT */
+.contact-container{
+display:flex;
+gap:60px;
+margin-top:40px;
+}
+
+.contact-info{
+flex:1;
+}
+
+.contact-form{
+flex:1;
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+}
+
+button.submit{
+background:#333;
+color:white;
+border:none;
+padding:12px 20px;
+cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+<div class="logo">LOGO</div>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#contact">Contact Us</a></li>
+</ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero">
+<div>
+<h1>Camping Gear and Essentials</h1>
+<p>Discover top-quality camping gear for unforgettable outdoor adventures.</p>
+<a href="#services"><button>Our Services</button></a>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+<div class="section-title">
+<h2>Our Services</h2>
+<p>Explore our range of camping gear services.</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://media.timeout.com/images/105658195/image.jpg">
+<h3>Tents</h3>
+<p>Experience comfort and protection with our high-quality camping tents.</p>
+</div>
+
+<div class="card">
+<img src="https://media.timeout.com/images/105658195/image.jpg">
+<h3>Sleeping Bags</h3>
+<p>Stay cozy and warm during your camping trips with our premium sleeping bags.</p>
+</div>
+
+<div class="card">
+<img src="https://media.timeout.com/images/105658195/image.jpg">
+<h3>Camp Stoves</h3>
+<p>Cook delicious meals in the great outdoors with our reliable camp stoves.</p>
+</div>
+
+<div class="card">
+<img src="https://media.timeout.com/images/105658195/image.jpg">
+<h3>Backpacks</h3>
+<p>Carry your essentials comfortably with durable hiking backpacks.</p>
+</div>
+
+<div class="card">
+<img src="https://media.timeout.com/images/105658195/image.jpg">
+<h3>Camp Chairs</h3>
+<p>Relax anywhere with our comfortable foldable chairs.</p>
+</div>
+
+<div class="card">
+<img src="https://media.timeout.com/images/105658195/image.jpg">
+<h3>Camp Lights</h3>
+<p>Bright and reliable lighting for your night adventures.</p>
+</div>
+
+</div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section">
+<div class="section-title">
+<h2>Portfolio</h2>
+<p>Some of our camping moments.</p>
+</div>
+
+<div style="text-align:center;">
+<img src="https://media.timeout.com/images/105658195/image.jpg" style="width:60%; border-radius:10px;">
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+<div class="section-title">
+<h2>About Us</h2>
+<p>Discover our story in providing camping services.</p>
+</div>
+
+<div class="about-content">
+<h3>Our Story</h3>
+<p>Experience the excellence of our camping gear and services, where we have been offering high-quality camping essentials and gear for outdoor enthusiasts for over a decade.</p>
+
+<h3>Our Mission</h3>
+<p>To equip outdoor enthusiasts with top-notch camping gear and essentials that enhance their outdoor experiences.</p>
+
+<h3>Our Vision</h3>
+<p>To become the go-to destination for camping enthusiasts known for premium camping gear and exceptional service.</p>
+
+<h3>Our Team</h3>
+<ul>
+<li>John Doe – Founder and CEO</li>
+<li>Jane Smith – Gear Specialist</li>
+<li>Mark Johnson – Customer Representative</li>
+<li>Sarah Brown – Operations Manager</li>
+</ul>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+<div class="section-title">
+<h2>Contact Us</h2>
+<p>Reach out to us for any inquiries or feedback.</p>
+</div>
+
+<div class="contact-container">
+
+<div class="contact-info">
+<p>📍 123 Campsite Avenue, Wilderness, CA 98765</p>
+<p>✉ info@campinggearexperts.com</p>
+<p>📞 (123) 456-7890</p>
+<p>🕒 Monday - Friday: 9 AM - 5 PM</p>
+<p>🌐 www.codingnepalweb.com</p>
+</div>
+
+<div class="contact-form">
+<input type="text" placeholder="Name*">
+<input type="email" placeholder="Email*">
+<textarea rows="5" placeholder="Message*"></textarea>
+<button class="submit">Send Message</button>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2024 Camping Gear. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
